@@ -1,10 +1,16 @@
 import React from 'react'
 
+import TopBar from '../components/TopBar'
+
 const Home = () => {
     return (
-        <div className='new-style'>
-            Hello world
-        </div>
+        <>
+            <TopBar />
+            
+            <div className='new-style'>
+                Hello world
+            </div>
+        </>
     )
 }
 
