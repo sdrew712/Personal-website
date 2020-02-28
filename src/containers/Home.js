@@ -1,16 +1,13 @@
 import React from 'react'
-
-import TopBar from '../components/TopBar'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
     return (
-        <>
-            <TopBar />
-            
+        <Link to='/about'>
             <div className='new-style'>
                 Hello world
             </div>
-        </>
+        </Link>
     )
 }
 
