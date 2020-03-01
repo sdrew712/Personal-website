@@ -1,13 +1,21 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import ShortStoryData from '../data/ShortStories.json'
 
 const ShortStoriesList = () => {
     return (
-        <Link to='/shortstories/fireflight'>
-             <div>
-                Short story page bro!!!
-            </div>
-        </Link>
+        <div>
+            {ShortStoryData.map((story) => {
+                return (
+                    <Link key={story.id} to={`/shortstories/${story.id}`}>
+                        <div>
+                            {story.title}
+                        </div>
+                    </Link>
+                )
+            })}
+        </div>
+
     )
 }
 
