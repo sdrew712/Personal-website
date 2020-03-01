@@ -5,8 +5,9 @@ import {
 
 import Home from './containers/Home'
 import About from './containers/About'
-import ShortStories from './containers/ShortStories'
+import ShortStoriesList from './containers/ShortStoriesList'
 import TopBar from './components/TopBar'
+import ShortStory from './containers/ShortStory'
 
 const Router = () => {
     return (
@@ -15,7 +16,8 @@ const Router = () => {
             <Switch>
                 <Route exact path='/' component={Home} /> 
                 <Route exact path='/about' component={About} /> 
-                <Route exact path='/shortstories' component={ShortStories} />
+                <Route exact path='/shortstories' component={ShortStoriesList} />
+                <Route exact path='/shortstories/:id' component={ShortStory} />
                 <Redirect from='*' to='/' />
             </Switch>
         </BrowserRouter>

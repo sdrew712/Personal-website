@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const ShortStories = () => {
+const ShortStoriesList = () => {
     return (
-        <Link to='/'>
+        <Link to='/shortstories/fireflight'>
              <div>
                 Short story page bro!!!
             </div>
@@ -11,4 +11,4 @@ const ShortStories = () => {
     )
 }
 
-export default ShortStories
+export default ShortStoriesList
